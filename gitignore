@@ -1,0 +1,37 @@
+# ─────────────────────────────────────────────
+# .gitignore — Files to NEVER push to GitHub
+# ─────────────────────────────────────────────
+
+# Environment & secrets (CRITICAL — never expose your API key!)
+.env
+
+# FAISS index (large binary files, regenerated from PDF)
+faiss_index/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Uploaded PDFs (may contain sensitive data)
+*.pdf
+
+# Streamlit cache
+.streamlit/

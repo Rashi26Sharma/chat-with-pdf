@@ -1,0 +1,28 @@
+# ─────────────────────────────────────────────
+# requirements.txt
+# Chat with PDF — RAG Application Dependencies
+# ─────────────────────────────────────────────
+# Install all with: pip install -r requirements.txt
+
+# ── UI Framework ───────────────────────────
+streamlit==1.35.0              # Web UI framework
+
+# ── LangChain Core ─────────────────────────
+langchain==0.2.6               # Core LangChain framework
+langchain-openai==0.1.13       # OpenAI integrations for LangChain
+langchain-community==0.2.6     # Community integrations (FAISS, etc.)
+
+# ── Vector Store ───────────────────────────
+faiss-cpu==1.8.0               # FAISS for CPU (use faiss-gpu if you have CUDA)
+
+# ── PDF Processing ─────────────────────────
+pdfplumber==0.11.0             # PDF text extraction (better than PyPDF2)
+
+# ── OpenAI SDK ─────────────────────────────
+openai==1.35.0                 # Official OpenAI Python client
+
+# ── Environment Variables ──────────────────
+python-dotenv==1.0.1           # Load .env files
+
+# ── Utilities ──────────────────────────────
+tiktoken==0.7.0                # Token counting (used by LangChain internally)
